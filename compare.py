@@ -1,14 +1,9 @@
 import numpy as np
 from matplotlib import pyplot as plt
 
-# readlines
-text_file = open("PN_list.txt", "r")
-PN_list = np.array(text_file.read().split(','), dtype="int32")
+number_list = np.arange(999999)
+p = number_list * [np.cos(number_list), np.sin(number_list)]
 
-PN_list_part = PN_list[:]
-p = PN_list_part * [np.cos(PN_list_part), np.sin(PN_list_part)]
-
-# biggest: 999983
 SIZE = 20000
 
 fig, ax = plt.subplots(figsize=(10, 10))
