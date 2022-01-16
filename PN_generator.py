@@ -1,6 +1,6 @@
 import math
 
-UP_TO = 9999
+UP_TO = 999999
 
 
 def isPrime(n):
